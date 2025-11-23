@@ -1,5 +1,17 @@
 const makeChange = (c) => {
   // your name here
+	  let q = Math.floor(amount / 25);
+    amount = amount % 25;
+    
+    let d = Math.floor(amount / 10);
+    amount = amount % 10;
+    
+    let n = Math.floor(amount / 5);
+    amount = amount % 5;
+    
+    let p = amount;
+    
+    return { q, d, n, p };
 };
 
 // Do not the change the code below
